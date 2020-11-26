@@ -48,13 +48,32 @@ jobs:
 
     # Generates an execution plan for Terraform
     - name: Terraform Plan
-      run: terraform plan
+      run: terraform plan 
+      run: echo  -e  "environment=$AZ_ENV \n \
+                      application_name=$APPLICATION_NAME \n \
+                      business_unit=$BUSINESS_UNIT \n \
+                      administrator_login_uid=$ADMINISTRATOR_LOG_ID \N \
+                      administrator_login_pwd=$ADMINISTRATOR_LOGIN_PWD \n \
+                      start_ip_address=$START_IP_ADDRESS \n \
+                      end_ip_address=$END_IP_ADDRESS \n \
+                      dr_regions=$DR_REGIONS" > .auto.tfvars
       working-directory: AZ/tf
       env:
         ARM_CLIENT_ID : ${{ secrets.ARM_CLIENT_ID }}
         ARM_CLIENT_SECRET : ${{ secrets.ARM_CLIENT_SECRET }}
         ARM_SUBSCRIPTION_ID : ${{ secrets.ARM_SUBSCRIPTION_ID }}
-        ARM_TENANT_ID : ${{ secrets.ARM_TENANT_ID }}       
+        ARM_TENANT_ID : ${{ secrets.ARM_TENANT_ID }} 
+        AZ_ENV : "dev"
+        APPLICATION_NAME : "invoicecloud"
+        BUSINESS_UNIT : "Payments"
+        ADMINISTRATOR_LOG_ID : "sqladmin"
+        ADMINISTRATOR_LOGIN_PWD : "P@$$.1w0rd"
+        START_IP_ADDRESS : "107.206.241.87"
+        END_IP_ADDRESS : "107.206.241.87"
+        DR_REGIONS : "{ \
+            pri = \"East US 2\" \
+            sec = \"Central US\" \
+        }"
 
       # On push to master, build or change infrastructure according to Terraform configuration files
       # Note: It is recommended to set up a required "strict" status check in your repository for "Terraform Cloud". See the documentation on "strict" required status checks for more information: https://help.github.com/en/github/administering-a-repository/types-of-required-status-checks
