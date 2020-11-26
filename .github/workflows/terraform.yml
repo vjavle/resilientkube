@@ -50,14 +50,14 @@ jobs:
     # Generate auto tfvars
     - name: Generate auto tfvars
       run: |
-          echo -e "environment=$AZ_ENV \n" > .auto.tfvars
-          echo -e "application_name=$APPLICATION_NAME \n" >> .auto.tfvars
-          echo -e "business_unit=$BUSINESS_UNIT \n" >> .auto.tfvars
-          echo -e "administrator_login_uid=$ADMINISTRATOR_LOG_ID \n" >> .auto.tfvars
-          echo -e "administrator_login_pwd=$ADMINISTRATOR_LOGIN_PWD \n" >> .auto.tfvars
-          echo -e "start_ip_address=$START_IP_ADDRESS \n" >> .auto.tfvars
-          echo -e "end_ip_address=$END_IP_ADDRESS \n" >> .auto.tfvars
-          echo -e "dr_regions=$DR_REGIONS" >> .auto.tfvars
+          echo -e "environment=\"$AZ_ENV\" \n" > .auto.tfvars
+          echo -e "application_name=\"$APPLICATION_NAME\" \n" >> .auto.tfvars
+          echo -e "business_unit=\"$BUSINESS_UNIT\" \n" >> .auto.tfvars
+          echo -e "administrator_login_uid=\"$ADMINISTRATOR_LOG_ID\" \n" >> .auto.tfvars
+          echo -e "administrator_login_pwd=\"$ADMINISTRATOR_LOGIN_PWD\" \n" >> .auto.tfvars
+          echo -e "start_ip_address=\"$START_IP_ADDRESS\" \n" >> .auto.tfvars
+          echo -e "end_ip_address=\"$END_IP_ADDRESS\" \n" >> .auto.tfvars
+          echo -e "dr_regions=\"$DR_REGIONS\"" >> .auto.tfvars
           cat .auto.tfvars
       working-directory : AZ/tf
       env:
@@ -79,8 +79,7 @@ jobs:
 
     # Generates an execution plan for Terraform
     - name: Terraform Plan
-      run: |
-              terraform plan 
+      run:  terraform plan 
       working-directory : AZ/tf
       env:
         ARM_CLIENT_ID : ${{ secrets.ARM_CLIENT_ID }}
