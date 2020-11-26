@@ -57,7 +57,7 @@ jobs:
           echo -e "administrator_login_pwd=\"$ADMINISTRATOR_LOGIN_PWD\" \n" >> .auto.tfvars
           echo -e "start_ip_address=\"$START_IP_ADDRESS\" \n" >> .auto.tfvars
           echo -e "end_ip_address=\"$END_IP_ADDRESS\" \n" >> .auto.tfvars
-          echo -e "dr_regions=\"$DR_REGIONS\" \n" >> .auto.tfvars
+          echo -e "dr_regions=$DR_REGIONS \n" >> .auto.tfvars
           cat .auto.tfvars
       working-directory : AZ/tf
       env:
