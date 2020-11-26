@@ -1,4 +1,4 @@
-resource "azurerm_user_assigned_identity" "example" {
+resource "azurerm_user_assigned_identity" "azurerm_user_assigned_identity" {
 
     for_each = var.dr_regions
     name                = format("mi-%s-%s-%s", each.key, var.environment,var.application_name)
