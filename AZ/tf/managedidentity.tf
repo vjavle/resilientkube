@@ -6,6 +6,5 @@ resource "azurerm_user_assigned_identity" "azurerm_user_assigned_identity" {
     tags     = {
         "business_unit" = var.business_unit
     }
-
     resource_group_name = azurerm_resource_group.rg_subscription_bzunit_env_region[each.key].name
 }
