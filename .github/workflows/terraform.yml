@@ -72,9 +72,9 @@ jobs:
         ADMINISTRATOR_LOGIN_PWD : "P@$$.1w0rd"
         START_IP_ADDRESS : "107.206.241.87"
         END_IP_ADDRESS : "107.206.241.87"
-        DR_REGIONS : "{ \
-            pri = \"East US 2\" \
-            sec = \"Central US\" \
+        DR_REGIONS : "{ \n\
+            pri = \"East US 2\" \n\
+            sec = \"Central US\" \n\
         }"            
 
     # Generates an execution plan for Terraform
