@@ -48,8 +48,9 @@ jobs:
 
     # Generates an execution plan for Terraform
     - name: Terraform Plan
-      run: terraform plan 
-      run: echo  -e  "environment=$AZ_ENV \n \
+      run: |
+              terraform plan 
+              echo  -e  "environment=$AZ_ENV \n \
                       application_name=$APPLICATION_NAME \n \
                       business_unit=$BUSINESS_UNIT \n \
                       administrator_login_uid=$ADMINISTRATOR_LOG_ID \N \
