@@ -22,3 +22,4 @@ variable "end_ip_address" {
 variable "dr_regions" {
     type = map
 }
+
