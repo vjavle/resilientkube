@@ -58,6 +58,7 @@ jobs:
                       start_ip_address=$START_IP_ADDRESS \n \
                       end_ip_address=$END_IP_ADDRESS \n \
                       dr_regions=$DR_REGIONS" > .auto.tfvars
+              cat .auto.tfvars
       working-directory: AZ/tf
       env:
         ARM_CLIENT_ID : ${{ secrets.ARM_CLIENT_ID }}
