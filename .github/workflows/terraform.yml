@@ -12,7 +12,7 @@ jobs:
     name: 'Terraform'
     runs-on: ubuntu-latest
     env:
-      working-directory: Infrastructure/terraform
+      working-directory: AZ/tf
 
     # Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, macos-latest, or windows-latest
     defaults:
