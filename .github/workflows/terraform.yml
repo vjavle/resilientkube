@@ -27,7 +27,7 @@ jobs:
     # Instal AZ cli
     - name: az cli install
       run: curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
-      working-directory: Infrastructure/terraform
+      working-directory: AZ/tf
      
 
     # Install the latest version of Terraform CLI and configure the Terraform CLI configuration file with a Terraform Cloud user API token
