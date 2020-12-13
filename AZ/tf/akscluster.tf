@@ -22,7 +22,7 @@ resource "azurerm_kubernetes_cluster" "azurerm_kubernetes_cluster" {
 
     windows_profile {
         admin_username  = "winadmin"
-        admin_password  = "P@$$>1w0rd"
+        admin_password  = "P@$$.1w0rd97531"
     }
 
     network_profile {
