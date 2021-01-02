@@ -14,8 +14,9 @@ What better platform than Kubernetes?
 <a href="https://github.com/vjavle/resilientkube/blob/master/AZ/tf/resilientkube.svg">
     <img src="https://github.com/vjavle/resilientkube/blob/master/AZ/tf/resilientkube.svg" width="100%" height="144">
 </a>
+
 ## Initial Scope
-Initial scope will start with implementation of this solution 
+Initial scope will start with single cloud (Azure), multi region DR/HA implementation.
 
 ## Technical Goals
 * Use as many as PaaS services as possible in as much as cross cloud compatible way
