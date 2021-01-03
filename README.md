@@ -20,12 +20,16 @@ What better platform than Kubernetes?
     <img src="https://github.com/vjavle/resilientkube/blob/master/AZ/tf/resilientkube.svg">
 </a>
 
-## Eventual Scope
 
 ## Technologies Used
 
+* [CloudFlare](https://www.cloudflare.com/) - Global Load Balancing
+* [Azure](https://azure.microsoft.com/en-us/) - Microsoft Public Managed Cloud
+* [AWS](https://aws.amazon.com/) - Amazon Public Managed Cloud
+* [GCP](https://cloud.google.com/) - Google Public Managed Cloud
+
 * [Terraform](https://www.terraform.io/) - IaC Provider
-* [CloudFlare](https://maven.apache.org/) - Global Load Balancing
+* [Kubernetes](https://kubernetes.io/) - Kubernetes
 
 ## Contributing
 
