@@ -11,11 +11,11 @@ Level of portability (not having to lock in for PaaS)
 What better platform than Kubernetes?
 
 ## General Architecture
+
+## Initial Scope
 <a href="https://github.com/vjavle/resilientkube/blob/master/AZ/tf/resilientkube.svg">
     <img src="https://github.com/vjavle/resilientkube/blob/master/AZ/tf/resilientkube.svg">
 </a>
-
-## Initial Scope
 
 ## Eventual Scope
 
