@@ -14,6 +14,7 @@ What better platform than Kubernetes?
 <a href="https://github.com/vjavle/resilientkube/blob/master/AZ/tf/resilientkube.svg">
     <img src="https://github.com/vjavle/resilientkube/blob/master/AZ/tf/Multiregional.svg">
 </a>
+
 ## Initial Scope
 <a href="https://github.com/vjavle/resilientkube/blob/master/AZ/tf/resilientkube.svg">
     <img src="https://github.com/vjavle/resilientkube/blob/master/AZ/tf/resilientkube.svg">
