@@ -5,7 +5,7 @@ The intent of this project to establish an opinionated framework of PaaS based K
 ## Motivation
 Over last few years, in cloud workload migrations, the trend has been to adopt Kubernetes than IaaS or PaaS workloads. 
 Why - mainly 2 reasons:
-1. IaaS costs - It's a no brainer most box to box migrations , while simply migration, can run billing into thousands. Hence PaaS or Containerization makes absolute sense.
+1. IaaS costs - It's a no brainer most box to box migrations , while simple to migrate, can run billing into thousands. Hence PaaS or Containerization makes absolute sense.
 Level of portability (not having to lock in for PaaS)
 2. While public managed clouds like Azure, AWS and GCP do offer high levels of SLAs and uptime, few outages , either regional or occassionally global with each of these clouds has left level of concern about lock into one particular vendor. Therefore , moving away from PaaS, and use portable containerization orchstration platform, makes more sense. 
 What better platform than Kubernetes?
